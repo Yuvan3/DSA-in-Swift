@@ -83,6 +83,29 @@ func printPattern6(rows: Int, columns: Int) {
     }
 }
 
-printPattern6(rows: 5, columns: 5)
+//printPattern6(rows: 5, columns: 5)
 
+//MARK: - Pattern – 7: Star Pyramid
+
+func printStarPyramid(rows: Int) {
+    for i in 1...rows {
+        let spaces = String(repeating: " ", count: rows - i)
+        let stars = String(repeating: "*", count: (2 * i) - 1)
+        print(spaces + stars)
+    }
+}
+
+//printStarPyramid(rows: 5)
+
+//MARK: - Pattern – 8: Inverted Star Pyramid
+
+func printInvertedStarPyramid(rows: Int) {
+    for i in (1...rows).reversed() {
+        let spaces = String(repeating: " ", count: rows - i)
+        let stars = String(repeating: "*", count: (2 * i) - 1)
+        print(spaces + stars)
+    }
+}
+
+printInvertedStarPyramid(rows: 5)
 
