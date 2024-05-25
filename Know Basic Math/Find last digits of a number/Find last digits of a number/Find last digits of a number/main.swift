@@ -27,12 +27,3 @@ func lastDigitOfPower(base a: Int, index b: Int) -> Int {
 }
 
 //print(lastDigitOfPower(base: 9, index: 3))
-
-
-let sellerName = "Yuvan"
-let respondYourOffer = "will respond to your offer."
-let offerAcceptRejectResponse = "They can reject, accept or counter your offer, upon which you can accept, decline or counter based on their response. Goodluck!"
-
-let finalText = sellerName + " \(respondYourOffer)\n" + "\n\(offerAcceptRejectResponse)"
-
-print(finalText)
